@@ -1,0 +1,17 @@
+﻿@using Presentaion_Layer.ViewModels
+@model DepartmentViewModel
+@{
+    ViewData["Title"] = "Edit";
+    ViewBag.Action = "Edit";
+}
+
+<div class="row justify-content-center align-content-center mt-3">
+    <h1 class="col-8 my-4">Edit Department</h1>
+    
+    <partial name="partial/createDepartmentPartial" />
+
+</div>
+
+@section validationScripts {
+    <partial name="_ValidationScriptsPartial" />
+}
